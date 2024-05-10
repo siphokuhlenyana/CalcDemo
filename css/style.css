@@ -1,0 +1,55 @@
+body{
+    background-image: url("https://github.com/siphokuhlenyana/ImagesPortfolio/blob/main/images.jpeg?raw=true");
+    background-repeat:no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin:0 ;
+}
+/* h1{
+    text-align: center;
+}
+#buttons{
+    display:flex;
+    flex-direction: column;
+}
+
+    /* width: 600px;
+    height: 400px;
+    
+    border: blue;
+    border-radius: 30px;
+} */
+/* 
+button{
+    width: 600px;
+    height: 400px;
+    
+    border: 1px solid blue;
+    border-radius: 30px;
+} */ 
+
+.calculator{
+    width: 250px;
+    background-color: lightblue;
+    padding: 20px;
+}
+.display{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.keys{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:5px
+}
+button{
+    padding: 10px;
+    font-size: 18px;
+    background: white;
+    border: 1px solid aqua;
+    cursor: pointer;
+}
