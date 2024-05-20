@@ -1,16 +1,8 @@
 let buttons =document.getElementsByTagName('button')
-// for(let button of buttons ){
-//     button.addEventListener('click',()=>{
-
-    
-//     alert(button.value)
-    
-// })
-
 let input= document.querySelector('[data-input]')
-let button1=document.querySelector('[value="AC"]')
-let button2=document.querySelector('[value="%"]')
-let button3=document.querySelector('[value="."]')
+let Clear=document.querySelector('[value="AC"]')
+let Percent=document.querySelector('[value="%"]')
+let Decimal=document.querySelector('[value="."]')
 let button4=document.querySelector('[(value="9"]')
 let button5=documen.querySelector('[value="8"]')
 let button6=document.querySelector('[value="7"]')
@@ -21,30 +13,29 @@ let button10=document.querySelector('[value="3"]')
 let button11=document.querySelector('[value="2")]')
 let button12=document.querySelector('[value="1"]')
 let button13=document.querySelector('[value="0"]')
-let button14=document.querySelector('[value="*"]')
-let button15=document.querySelector('[value="/"]')
-let button16=document.querySelector('[value="-"]')
-let button17=document.querySelector('[value="+"]')
-let button18=document.querySelector('[value="="]')
+let multiply=document.querySelector('[value="*"]')
+let divide=document.querySelector('[value="/"]')
+let substract=document.querySelector('[value="-"]')
+let add=document.querySelector('[value="+"]')
+let results=document.querySelector('[value="="]')
 
 
-button1.addEventListener('click',()=>{
     
-button1.addEventListener('click',()=>{
-    input.value = button5.value
+Clear.addEventListener('click',()=>{
+    input.value.innerContent=""
 })
 
-})
 
 
-button2.addEventListener('click',()=>{
+Percent.addEventListener('click',()=>{
+    modulus()
     input.value = button2.value
 })
 
 
 
-button3.addEventListener('click',()=>{
-    input.value = button3.value
+Decimal.addEventListener('click',()=>{
+    input.value = decimal.value
 })
 
 
@@ -98,32 +89,49 @@ button13.addEventListener('click',()=>{
 })
 
 
-button14.addEventListener('click',()=>{
-    input.value = button14.value
+multiply.addEventListener('click',()=>{
+    multiplication()
 })
 
 
-button15.addEventListener('click',()=>{
-    input.value = button15.value
+divide.addEventListener('click',()=>{
+  
 })
 
-button16.addEventListener('click',()=>{
-    input.value = button16.value
+substract.addEventListener('click',()=>{
+    substraction()
+    
 })
 
-button17.addEventListener('click',()=>{
-    input.value = button17.value
+add.addEventListener('click',()=>{
+    addition()
 })
 
-button18.addEventListener('click',()=>{
-    input.value = button18.value
+results.addEventListener('click',()=>{
+    substraction()
+    addition()
+    substraction()
+    division()
+    percentage()
 })
 
 
-function modulus(){
-    input.value %2
+function percentage(){
+    input.value= (buttons.value /buttons.value)*100
 }
 
+function addition (){
+    input.value =eval(buttons.value + buttons.value)
+}
+function substraction(){
+    input.value =buttons.value - buttons.value
+}
+function division(){
+      input.value = buttons.value/buttons.value
+}
+function multiplication(){
+    input.value =buttons.value*buttons.value
+}
 
 
 

@@ -50,7 +50,7 @@ button{
 } */
 
 input{
-    background-color: blueviolet;
+    background-color: 0,0,0 rgb(44, 43, 45);
     width:250px;
     height: 80px;
     color: black;
