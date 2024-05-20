@@ -3,7 +3,7 @@ let input= document.querySelector('[data-input]')
 let Clear=document.querySelector('[value="AC"]')
 let Percent=document.querySelector('[value="%"]')
 let Decimal=document.querySelector('[value="."]')
-let button4=document.querySelector('[(value="9"]')
+let button4=document.querySelector('[value="9"]')
 let button5=documen.querySelector('[value="8"]')
 let button6=document.querySelector('[value="7"]')
 let button7=document.querySelector('[value="6"]')
@@ -28,14 +28,14 @@ Clear.addEventListener('click',()=>{
 
 
 Percent.addEventListener('click',()=>{
-    modulus()
-    input.value = button2.value
+    percentage()
+
 })
 
 
 
 Decimal.addEventListener('click',()=>{
-    input.value = decimal.value
+    input.value = Decimal.value
 })
 
 
@@ -143,81 +143,6 @@ function multiplication(){
 
 
 
-
-// button1.addEventListener("click",Clear)
-// button2.addEventListener("click",Modulus)
-// button3.addEventListener("click",Dot)
-// button4.addEventListener("click",clickNine)
-// button5.addEventListener("click",clickEight)
-// button6.addEventListener("click",clickSeven)
-// button7.addEventListener("click",ClickSix)
-// button8.addEventListener("click",ClickFive)
-// button9.addEventListener("click",ClickFour)
-// button10.addEventListener("click",ClickThree)
-// button11.addEventListener("click",ClickTwo)
-// button12.addEventListener("click",ClickOne)
-// button13.addEventListener("click",ClickZero)
-// button14.addEventListener("click",function)
-// button15.addEventListener("click",function)
-// button16.addEventListener("click",function)
-// button17.addEventListener("click",function)
-// button18.addEventListener("click",function)
-
-
-// function Clear(){
-//   input.value =button1.value;
-// }
-// function Modulus(){
-//     input.value =button2.value;
-//   }
-//   function Dot(){
-//     input.value =button3.value;
-//   }
-//   function clickNine(){
-//     input.value +=button4.value;
-//   }
-  
-//   function clickEight(){
-//     input.value +=button5.value;
-//   }
-  
-//   function clickSeven(){
-//     input.value +=button6.value;
-//   }
-  
-//   function ClickSix(){
-//     input.value +=button7.value;
-//   }
-  
-//   function ClickFive(){
-//     input.value +=button8.value;
-//   }
-  
-//   function ClickFour(){
-//     input.value +=button9.value;
-//   }
-  
-//   function ClickThree(){
-//     input.value +=button10.value;
-//   }
-  
-//   function ClickTwo(){
-//     input.value +=button11.value;
-//   }
-  
-//   function ClickOne(){
-//     input.value +=button12.value;
-//   }
-//   function ClickZero(){
-//     input.value +=button13.value;
-//   }
-//   function multiply(){
-//       input.value buttons.value
-//   }
-//    function divide(){
-//     input.value
-//    }
-  
 
 
 
